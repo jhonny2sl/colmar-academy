@@ -319,3 +319,94 @@ header nav.desktop ul li a {
     }
 }
 
+/* SUBJECTS */
+
+#subjects .content {
+    padding: 2rem 3.5rem;
+}
+
+#subjects h1 {
+    margin-bottom: .75rem;
+    text-align: center;
+}
+
+#subjects .course {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#subjects .course div {
+    background-color: white;
+    min-width: 16.6875em;
+    max-width: 30%;
+    min-height: 18.875em;
+    margin: 1rem;
+}
+
+#subjects .course div img {
+    height: auto;
+}
+
+#subjects .course div article {
+    padding: 1rem 1rem 1.5rem;
+}
+
+#subjects .course div article p.courses {
+    padding: .5rem 0;
+}
+
+@media only screen and (max-width: 598px) {
+    #subjects .content {
+        background-color: white;
+        border-top: 2px solid lightgrey;
+        border-bottom: 2px solid lightgrey;
+        padding: 1rem;
+    }
+
+    #subjects .course div {
+        background-color: lightgrey;
+        max-width: 100%;
+        min-height: auto;
+        margin: .25rem;
+        transition: all ease-in-out 300ms;
+    }
+
+    #subjects .course div:hover {
+        width: 16.6875em;
+        min-height: 18.875em;
+    }
+
+    #subjects .course div img {
+        width: 100%;
+        height: 0;
+        transition: all ease-in-out 300ms;
+    }
+
+    #subjects .course div:hover img {
+        height: 137px;
+    }
+
+    #subjects .course div article {
+        padding: 0 1rem 1rem;
+        transition: all ease-in-out 300ms;
+    }
+
+    #subjects .course div:hover article {
+        padding: 1rem 1rem 1.5rem;
+    }
+
+    #subjects .course div article p {
+        display: none;
+        height: 0;
+        transition: all ease-in-out 300ms;
+    }
+
+    #subjects .course div:hover article p {
+        display: block;
+        height: auto;
+    }
+}
+
+/* THESIS */
+
