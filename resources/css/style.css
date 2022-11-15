@@ -12,8 +12,36 @@ main {
     top: 4rem; /* To offset for fixed header. */
 }
 
+h1, h3, button {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.17em;
+    line-height: 1.45;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+a,
+p {
+    font-size: 0.875em;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
 .content {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0 2rem 1.5rem;
 }
 
 .mobile {
@@ -92,3 +120,202 @@ header nav.desktop ul li a {
         justify-content: space-around;
     }
 }
+
+/* BANNER */
+
+#intro .content {
+    display: flex;
+    align-items: center;
+}
+
+#intro .banner {
+    max-width: 60%;
+    padding-right: 1.5rem;
+}
+
+#intro .heading {
+    padding-left: 1rem;
+}
+
+#intro .heading h3 {
+    padding: 1rem 0 1.5rem 0;
+}
+
+#intro .heading button {
+    background-color: dimgray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: .5rem 6.5rem;
+}
+
+@media only screen and (max-width: 898px) {
+    #intro .content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    #intro .banner {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    #intro .heading {
+        padding: 2rem 1rem;
+    }
+}
+
+/* INFORMATION */
+
+#information .content {
+    background-color: white;
+    display: flex;
+    padding: 0; /* reset .content general style */
+    padding-left: 1.5rem;
+}
+
+#information .information-main {
+    max-width: 60%;
+    padding-right: 1.5rem;
+}
+
+#information .information-main img,
+#information .information-main article,
+#information .information-main article h5 {
+    padding-top: 2rem;
+}
+
+#information .information-main article h5 {
+    padding-bottom: 2rem;
+}
+
+#information .information-main article h1 {
+    padding-bottom: 1.5rem;
+}
+
+#information .information-main article p {
+    line-height: 1.4;
+}
+
+#information .information-secondary {
+    border-left: 2px solid lightgrey;
+    max-width: 40%;
+}
+
+#information .information-secondary div {
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: background-color ease 500ms;
+}
+
+#information .information-secondary div:hover {
+    background-color: lightgrey;
+}
+
+#information .information-secondary div.orientation {
+    border-top: none;
+    padding-top: 1rem;
+}
+
+#information .information-secondary div .image-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: none;
+    border-bottom: none;
+    max-width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+#information .information-secondary div.orientation .image-container {
+    content: url('../images/information-orientation.jpg');
+}
+
+#information .information-secondary div.campus .image-container {
+    content: url('../images/information-campus.jpg');
+}
+
+#information .information-secondary div.guest-lecture .image-container {
+    content: url('../images/information-guest-lecture.jpg');
+}
+
+#information .information-secondary div article {
+    width: 65%;
+}
+
+#information .information-secondary article p {
+    padding: .5rem 0;
+    max-width: 93%;
+}
+
+#information .information-secondary article a {
+    color: blue;
+    display: block;
+}
+
+@media only screen and (max-width: 898px) {
+    #information .content {
+        justify-content: stretch;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #information .information-main {
+        display: none;
+    }
+
+    #information .information-secondary {
+        border-left: none;
+        max-width: 100%;
+        flex: 1;
+    }
+
+    #information .information-secondary div {
+        border-top: none;
+        border-bottom: none;
+        flex-direction: column;
+        align-items: stretch;
+        transition: background-color ease 0ms;
+    }
+    
+    #information .information-secondary div:hover {
+        background-color: white;
+    }
+
+    #information .information-secondary div.orientation {
+        padding-top: 1rem;
+    }
+
+    #information .information-secondary div .image-container {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #information .information-secondary div.orientation .image-container {
+        content: url('../images/information-orientation-mobile.jpg');
+    }
+
+    #information .information-secondary div.campus .image-container {
+        content: url('../images/information-campus-mobile.jpg');
+    }
+
+    #information .information-secondary div.guest-lecture .image-container {
+        content: url('../images/information-guest-lecture-mobile.jpg');
+    }
+
+    #information .information-secondary div article {
+        width: 89%;
+        padding: 2rem 1rem;
+    }
+
+    #information .information-secondary article p {
+        max-width: 100%;
+    }
+}
+
