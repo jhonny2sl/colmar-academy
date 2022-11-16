@@ -410,3 +410,124 @@ header nav.desktop ul li a {
 
 /* THESIS */
 
+#exhibit .content {
+    background-color: white;
+}
+
+#exhibit h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#exhibit .thesis {
+    display: flex;
+}
+
+#exhibit .thesis .thesis-main {
+    max-width: 60%;
+}
+
+#exhibit .thesis .thesis-main video {
+    max-width: 100%;
+}
+
+#exhibit .thesis .thesis-main article h3 {
+    padding: 1.5rem 0 .5rem;
+}
+
+#exhibit .thesis .thesis-main article p {
+    max-width: 96%;
+}
+
+#exhibit .thesis .thesis-secondary {
+    max-width: 40%;
+    padding-left: 1.5rem;
+}
+
+#exhibit .thesis .thesis-secondary div {
+    display: flex;
+    align-items: center;
+}
+
+#exhibit .thesis .thesis-secondary div.fisma {
+    background-color: lightgrey;
+}
+
+#exhibit .thesis .thesis-secondary div .image-container {
+    padding: 1rem;
+    width: 35%;
+    height: auto;
+}
+
+#exhibit .thesis .thesis-secondary div.fisma .image-container {
+    content: url('../images/thesis-fisma.jpg');
+}
+
+#exhibit .thesis .thesis-secondary div.now-and-then .image-container {
+    content: url('../images/thesis-now-and-then.jpg');
+}
+
+#exhibit .thesis .thesis-secondary div article {
+    width: 65%;
+}
+
+#exhibit .thesis .thesis-secondary div article p {
+    padding: .5rem 0;
+}
+
+@media only screen and (max-width: 898px) {
+    #exhibit .content {
+        padding-left: 0;
+    }
+
+    #exhibit .thesis .thesis-main {
+        max-width: 100%;
+    }
+
+    #exhibit .thesis .thesis-main article {
+        padding-left: 1.5rem;
+    }
+
+    #exhibit .thesis .thesis-secondary {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 598px) {
+    #exhibit .content {
+        padding-bottom: 1.5rem;
+    }
+
+    #exhibit h1 {
+        margin-bottom: 1rem;
+    }
+
+    #exhibit .thesis .thesis-main article {
+        display: none;
+    }
+}
+
+/* COPYRIGHT */
+
+footer .content {
+    background-color: white;
+    border-top: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 2.5rem;
+}
+
+footer .policy a {
+    font-size: 0.83em;
+    padding-left: .5rem;
+}
+
+@media only screen and (max-width: 449px) {
+    footer .content{
+        padding: 1rem 1.5rem 1rem;
+    }
+
+    footer .policy {
+        display: none;
+    }
+}
